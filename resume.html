@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal CV Website</title>
+    <style>
+        body {
+            background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/56/8/EM7fHA.jpg");
+
+            background-color: transparent;
+            margin: 20px;
+            width: 90vw;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background-image: url(https://img.wallpapersafari.com/desktop/1920/1080/41/43/bs71vd.jpg);
+                margin: 0;
+            }
+        }
+
+        #nav-bar {
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            flex-direction: column;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: transparent;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: green;
+
+        }
+
+        #navbar-list {
+            display: flex;
+            margin-right: 5px;
+
+
+        }
+
+        @media (max-width: 600px) {
+            #nav-bar {
+                justify-content: flex-start;
+                font-size: 2px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            #navbar-list {
+                color: rgb(14, 1, 1);
+                font-size: 2px;
+            }
+        }
+
+        #navbar-list a {
+            display: block;
+            font-size: 10px;
+            padding: 2px;
+
+
+        }
+
+        #navbar-list a:hover {
+            background: #2063b4;
+        }
+
+        #title {
+            text-align: center;
+            position: relative;
+            top: 15px;
+        }
+
+        #profile-img {
+            max-width: 250px;
+            height: auto;
+            position: relative;
+            border-radius: 50%;
+
+        }
+
+
+        h1 {
+            font-size: 25px;
+            color: black;
+            position: relative;
+
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 15px;
+                color: rgb(112, 5, 5);
+            }
+        }
+
+        h3 {
+            color: black;
+            font-size: 16px;
+            opacity: 0.6;
+        }
+
+        @media (max-width: 600px) {
+
+            h3,
+            h2 {
+                font-size: 10px;
+                color: rgb(112, 5, 5);
+
+            }
+        }
+
+
+        hr {
+            border-style: solid;
+            color: brown;
+        }
+
+        #box-container1 {
+            background: rgba(46, 51, 49, 0.1);
+            display: flex;
+            height: 200px;
+
+            text-align: left;
+            margin: 30px;
+            justify-self: center;
+        }
+
+        @media (max-width: 600px) {
+            #box-container1 {
+                background-image: url(https://mcdn.wallpapersafari.com/medium/42/67/hpWt63.jpg);
+            }
+        }
+
+        p {
+            font-size: 18px;
+            font-family: serif;
+            width: auto;
+            align-self: center;
+            justify-self: center;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 20px;
+
+        }
+
+        @media (max-width: 600px) {
+
+            p,
+            li {
+                font-size: 13px;
+                color: rgb(112, 5, 5);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            }
+        }
+
+        #box-container2 {
+            background: rgba(46, 51, 49, 0.1);
+            display: flex;
+            height: auto;
+            width: auto;
+            justify-content: space-between;
+            margin: 30px;
+            padding: 10px;
+        }
+
+        #box2-1 {
+
+            background-color: rgb(248, 230, 230);
+            width: 45%;
+            height: 50%;
+        }
+
+        #box2-2 {
+            background-color: rgb(248, 230, 230);
+            width: 45%;
+            height: auto;
+        }
+
+        @media (max-width: 600px) {
+
+            #box2-1,
+            #box2-2 {
+                background-image: url(https://mcdn.wallpapersafari.com/medium/42/67/hpWt63.jpg);
+            }
+        }
+
+        h4 {
+            font-size: 18px;
+        }
+
+        @media (max-width: 600px) {
+            h4 {
+                font-size: 13px;
+            }
+        }
+
+        li {
+            font-size: 18px;
+            font-family: serif;
+        }
+
+        #container {
+            display: grid;
+            font-size: 18px;
+            background-color: rgba(46, 51, 49, 0.1);
+            width: 100%;
+            grid-template-columns: 45% 45%;
+            height: 200px;
+            justify-content: space-between;
+
+        }
+
+        #row1 {
+            background-color: transparent;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(8, 8, 105);
+            font-style: italic;
+
+            align-self: stretch;
+        }
+
+        #row2 {
+            background-color: transparent;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(8, 8, 105);
+            font-style: italic;
+
+            align-self: stretch;
+        }
+
+        @media (max-width: 800px) {
+
+            #row1,
+            #row2 {
+                background-image: url(https://mcdn.wallpapersafari.com/medium/42/67/hpWt63.jpg);
+                margin: none;
+            }
+        }
+
+        #contact-container {
+
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 5vw;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+
+        }
+
+        #contact-info1 {
+            background-color: rgba(46, 51, 49, 0.1);
+            width: 45%;
+            font-size: 26px;
+            text-align: center;
+
+        }
+
+        #contact-info1:hover {
+            transform: translateY(5px);
+
+            background-color: gray;
+        }
+
+        @media (max-width: 800px) {
+            #contact-info1 {
+                font-size: 12px;
+                padding: 0;
+            }
+        }
+
+
+
+        #message {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background-color: rgb(238, 20, 20);
+        }
+
+        #btn-message {
+            color: brown;
+            background-color: aqua;
+        }
+
+        #btn-message:hover {
+            transform: transateY(5px);
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="nav-bar">
+        <ul id="nav-bar">
+            <li>
+                <a href="#biography">Biography</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#box-container2">Education</a>
+            </li>
+            <li>
+                <a href="#contact-container">Contact Informations</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="title">
+
+        <img id="profile-img" src="AlmirDautovic.jpg" alt="profile picture">
+
+
+        <h1 id="title">Almir Dautovic</h1>
+        <h3 id="title">Mechanical engineering student (Graduate)</h3>
+
+    </div>
+    <br>
+    <hr>
+    <section id="biography">
+        <h2 id="title">Biography</h2>
+    </section>
+    <div id="box-container1">
+        <p>
+            My name is Almir Dautovic. I was born 07.03.1986 in Zvornik, Bosnia and Herzegowina. I started elementary
+            school
+            in
+            Srebrenik and finished it in Druga Osnovna Skola, Zivinice. I was cometing in many mathematic and phisics
+            school
+            competitions.
+            I started high school in 2001, and finished Gymnasium in 2005. After that i was studiing Phisics at
+            Prirodno-Matrmaticki faculty
+            at Tuzla University.
+            I switched field of study and started studiing mechanical engineering at Mechanical Faculty, at Universiti
+            of
+            Tuzla and I am
+            graduate student there.
+        </p>
+
+    </div>
+    <section id="about">
+        <h2 id="title">
+
+            About
+
+        </h2> <br>
+    </section>
+    <div id="box-container1">
+
+
+        <p>
+            I am highly motivated adaptable and responsible advanced university student of Mechanical Engineering
+            with
+            basic knowledge in CAD software.
+            Even if I am with no prior expirience I posses a good team spirit and i am dedline orientated and have
+            abillity to quickly addapt and improve my skills.
+            Seeking new challenges within an profesional organisation.
+            I could work independently with minimal guidance and would enjoy contributing as part of a team.
+        </p>
+
+    </div>
+    <hr>
+
+    <div id="box-container2">
+        <div id="box2-1">
+            <h2>Education :</h2>
+            <ul>
+                <li>
+                    <strong>1994-2001</strong>
+                    <h4>Elementary school</h4>
+                    <p>
+                        Druga osnovna skola, Zivinice
+                    </p>
+                </li>
+                <li><strong>2001-2005</strong>
+                    <h4>High school</h4>
+                    <p>Opsta Gimnazija, Zivinice</p>
+                </li>
+                <li>
+                    <strong>2005-2006</strong>
+                    <h4>Physics at Universiti of Tuzla</h4>
+                </li>
+                <li><strong>ongoing</strong>
+                    <h4>University of Tuzla</h4>
+                    <p>Mechanical Engineering</p>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div id="box2-2">
+            <h2>Skills :</h2>
+            <ul>
+                <li>Basic lvl Autodesk AutoCAD
+                    <ul>
+                        <li>2D</li>
+                        <li>3D</li>
+                    </ul>
+                </li>
+                <li>Basic lvl SOLIDWORKS</li>
+                <li>Some knowledge in MATLAB and ANSYS</li>
+                <li>Ability to interpret working drawings</li>
+                <li>Polite</li>
+                <li>Friendly</li>
+                <li>Quick learner</li>
+                <li>Good team player</li>
+            </ul>
+
+        </div>
+
+    </div>
+    <hr>
+    <h2 id="title">Languages</h2>
+
+    <div id="container">
+
+        <div id="row1">
+            <ul>
+                <li>English :
+                    <ul>
+                        <li>Speaking - very good</li>
+                        <li>Reading - very good</li>
+                        <li>Writing - very good</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="row2">
+            <ul>
+                <li>German :
+                    <ul>
+                        <li>Speaking - basic</li>
+                        <li>Reading - good</li>
+                        <li>Writing - basic</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <h2>Contact Informations</h2>
+
+    <div id="contact-container">
+
+        <div id="contact-info1">
+            <a href="mailto:me@test.com">Send me a Mail</a>
+        </div>
+        <div id="contact-info1">
+
+            <a href="tel:886-554">Call Me </a>
+        </div>
+        <div id="contact-info1">
+            <a target="_blank" href="https://www.facebook.com/almir.dautovic.7/">FB profile</a>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h2>For additionall information send me a message</h2>
+        <div id="message">
+            <form action="https://www.facebook.com/almir.dautovic.7/">
+                <input type="text" placeholder="Please write message here>">
+                <button id="btn-message" type="submit" target="https://www.facebook.com/almir.dautovic.7/">Send
+                    Message</button>
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
